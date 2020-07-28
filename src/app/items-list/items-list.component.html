@@ -1,0 +1,53 @@
+<div class="top-nav">
+    <svg-icon class="top-nav-icon" matListIcon src="assets/logo.svg"></svg-icon>
+    <span class="top-nav-email">{{email}} - </span>
+    <span class="top-nav-logout" routerLink="/login" routerLinkActive="active">Logout</span>
+</div>
+
+<div class="form-item">
+    <h3>{{title}}</h3>
+    <input class="form-name" placeholder="Nome" type="text" [formControl]="nome" required>
+    <span class="invalid-name" *ngIf="nameHasError">{{nameHasError}}</span>
+    <div class="bottom-form-outer">
+        <div>
+            <input class="form-quantity" placeholder="Quantidade" type="number" [formControl]="quantidade" required
+                min="0">
+            <span class="invalid-quantity" *ngIf="quantityHasError">{{quantityHasError}}</span>
+        </div>
+        <div>
+            <input class="form-value" placeholder="Preço" type="number" [formControl]="preco" required min="0">
+            <span class="invalid-cost" *ngIf="costHasError">{{costHasError}}</span>
+
+        </div>
+        <button class="" (click)="onClickAddItem()">Adicionar</button>
+    </div>
+</div>
+
+
+
+<mat-list>
+    <hr>
+    <div *ngIf="data.length > 0; else loggedOut">
+        <span class="list-title">{{ data.length }} items adicionados:</span>
+        <mat-list-item *ngFor="let element of data">
+            <svg-icon matListIcon src="assets/icon.svg"></svg-icon>
+            <h4 matLine>{{element.name}}</h4>
+            <p matLine>Qtd. {{element.quantity}}</p>
+            <span>{{element.cost}}</span>
+            <button mat-button (click)="onClickRemoveItem(element.id)">Remover</button>
+        </mat-list-item>
+    </div>
+
+    <ng-template #loggedOut>
+        <div class="empty-list">
+            <svg-icon matListIcon src="assets/empty.svg"></svg-icon>
+            <p>Ainda não tem nenhum item adicionado</p>
+        </div>
+    </ng-template>
+
+    <hr>
+    <span class="list-total">Total</span>
+    <span class="list-quantity">Quantidade: {{totalQuantity}}</span>
+    <span class="list-price">Preço: ${{totalPrice}}</span>
+
+</mat-list>

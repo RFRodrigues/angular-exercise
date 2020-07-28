@@ -1,0 +1,149 @@
+.top-nav {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 1px 1px 5px #888888;
+    padding: 10px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.top-nav-icon{
+    margin-right: 150px;
+}
+
+.top-nav-email{
+    margin-left: 150px;
+}
+
+.top-nav-logout{
+    cursor: pointer;
+    color: #5b9438;
+}
+
+.mat-list-base {
+    margin: 0 auto 30px auto;
+    width: 60%;
+}
+
+.form-item{
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    flex-grow: 4;
+}
+
+.form-item button {
+    background-color: #5b9438;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 60px;
+    color: white;
+    cursor: pointer;
+    width: 33%;
+    height: 2.2rem;
+}
+
+.form-name{
+    display: block;
+    width: 100%;
+    padding: 0;
+    line-height: 2rem;
+    text-indent: 10px;
+}
+
+.form-quantity{
+    padding: 0;
+    line-height: 2rem;
+    width: 100%;
+    text-indent: 10px;
+}
+
+.form-value{
+    width: 100%;
+    padding: 0;
+    line-height: 2rem;
+    text-indent: 10px;
+}
+
+.list-title{
+    padding: 0 16px;
+}
+
+.mat-list-item{
+    background-color: white;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: solid 1px #e6e6e6;
+}
+
+.mat-list-item:hover{
+    background-color: #e6e6e6;
+    border: solid 1px #bfbfbf;
+    transition: 0.3s;
+}
+
+.mat-list-item svg {
+    border-radius: 40%;
+    background-color: #f2f2f2;
+    padding: 5px;
+    padding: px;
+    margin: -15px 10px 10px -15px;
+}
+
+.mat-list-item svg path {
+    fill: #145214;
+}  
+
+.mat-list-item button {
+    background-color: #800000;
+    border: none;
+    border-radius: 5px;
+    padding: 3px 25px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 5px 10px 15px;
+}
+
+.list-total{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.list-quantity{
+    color: #333333;
+}
+
+.list-price{
+    float: right;
+    color: #333333;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+.empty-list{
+    text-align: center;
+}
+
+.invalid-quantity, .invalid-cost, .invalid-name{
+    color: rgb(173, 2, 2);
+    display: block;
+    float: left;
+}
+
+.bottom-form-outer {
+    display: flex;
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+.bottom-form-outer > div {
+    width: 33%;
+}
+
+.bottom-form-outer > div:nth-child(2) {
+    margin: 0 10px;
+}

@@ -5,6 +5,8 @@
   To learn more about this file see: https://angular.io/config/solution-tsconfig.
 */
 {
+  "resolveJsonModule": true,
+  "esModuleInterop": true,
   "files": [],
   "references": [
     {
@@ -13,5 +15,5 @@
     {
       "path": "./tsconfig.spec.json"
     }
-]
+  ]
 }

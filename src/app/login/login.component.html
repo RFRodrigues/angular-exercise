@@ -1,0 +1,27 @@
+<div class="content" role="main">
+  <div class="logotipo">
+    <svg-icon src="assets/logo.svg"></svg-icon>
+  </div>
+  <div class="login-form">
+
+    <label class="form-title">
+      Bem vindo
+    </label>
+    <input placeholder="Email" class="form-control" type="text" [formControl]="email" required>
+    <span class="invalid-email" *ngIf="emailHasError">{{emailHasError}}</span>
+    <input placeholder="Password" type="password" [formControl]="password" required>
+    <span class="invalid-password" *ngIf="passwordHasError">{{passwordHasError}}</span>
+    <button (click)="onClickLogin()">Login</button>
+
+  </div>
+  <div class="illustration">
+    <svg-icon src="assets/illustration.svg"></svg-icon>
+  </div>
+
+
+</div>
+
+
+
+
+<router-outlet></router-outlet>

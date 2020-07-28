@@ -1,0 +1,48 @@
+.logotipo {
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+.illustration {
+    text-align: center;
+    margin: 20px;
+}
+
+.login-form{
+    width: 400px;
+    padding: 60px 30px;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+.login-form > input {
+    width: 100%;
+    margin: 5px 0 5px 0;
+    line-height: 2.5rem;
+    border: solid 1px #cccccc;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+.login-form > button {
+    float: right;
+    background-color: #5b9438;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 60px;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+}
+
+.form-title {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.invalid-password, .invalid-email{
+    color: rgb(173, 2, 2);
+}
